@@ -1,0 +1,965 @@
+[
+    {
+        "id": 0,
+        "name": "Bomba",
+        "latin-name": "",
+        "mana": 0,
+        "resources": 35,
+        "base": ["železná koule", "zápalná šňůra"],
+        "duration": "ihned",
+        "crafting-time": "10 minut",
+        "short-description": "železná koule s kusem zápalné šňůry",
+        "usage": "vržení",
+        "difficulty": 8,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Bomba je železná koule o velikosti lidské dlaně naplněná třaskavinou. K jejímu odpálení se používá zápalná šňůra. Její délka určuje počet kol do výbuchu (kolo za každých 10 coulů délky).",
+            "Při explozi je každý tvor v okruhu pěti sáhů kolem bomby zraněn střepinami za 2k6+4 životů."
+        ],
+        "variants": []
+    },
+    {
+        "id": 1,
+        "name": "Dýmovnice",
+        "latin-name": "",
+        "mana": 0,
+        "resources": 25,
+        "base": ["listí", "případně zápalná šňůra"],
+        "duration": "5 minut",
+        "crafting-time": "10 minut",
+        "short-description": "malá, obvykle dřevěná nebo hliněná trubička",
+        "usage": "vržení",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "K výrobě dýmovnice stačí jakákoliv utěsnitelná schránka – dutá trubička nebo třeba z hlíny upatlaná koule. Její obsah lze zapálit buďto přímo, nebo pomocí zápalné šňůry (podobně jako u bomby). Když se rozhoří, vytvoří kolem sebe hustý oblak dýmu. Ten je dusivý, vyvolává kašel a dráždí oči.",
+            "Jedna dýmovnice dokáže zamořit kruh o poloměru deseti sáhů kolem ní. Viditelnost uvnitř je maximálně jeden sáh a zvenčí dovnitř není vidět vůbec."
+        ],
+        "variants": []
+    },
+    {
+        "id": 2,
+        "name": "Kouzelný inkoust",
+        "latin-name": "Atramentum Arcanum",
+        "mana": 4,
+        "resources": 6,
+        "base": ["olej"],
+        "duration": "-",
+        "crafting-time": "5 minut",
+        "short-description": "flakón s upraveným olejem libovolné barvy",
+        "usage": "psaní",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Alchymista dokáže proměnit klasický olej v upravený inkoust. Ten má pak vysokou odolnost vůči vodě (smyje ho jen velmi silný proud vody nebo vytrvalý déšť).",
+            "Kromě toho dokáže alchymista malými úpravami v receptu vytvořit ještě další tři jeho varianty:",
+            "Jeden flakón obsahuje dostatek inkoustu k popsání pěti stran pergamenu."
+        ],
+        "variants": [
+            {"name": "Neviditelný inkoust", "description": "Inkoust se ihned po použití stává neviditelným. Je možné jej zviditelnit působením tepla (například svíčka pod pergamenem)."},
+            {"name": "Světélkující inkoust", "description": "Tento inkoust slabě světélkuje. Lze ho vytvořit v barevné podobě podle potřeby alchymisty. Dá se použít k ohromení laiků stejně jako ke značkování cesty."},
+            {"name": "Mizející inkoust", "description": "U této varianty se jedná o rychle se odpařující formu. Inkoust se do hodiny po použití kompletně odpaří. Nezanechá po sobě žádné stopy."}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Lakmusový papírek (10 ks)",
+        "latin-name": "Litmus Charta",
+        "mana": 1,
+        "resources": 5,
+        "base": ["pergamen"],
+        "duration": "ihned",
+        "crafting-time": "10 minut",
+        "short-description": "bílý, asi deset coulů dlouhý proužek pergamenu",
+        "usage": "namáčení",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Ponořením papírku do vybrané tekutiny dokážeš určit, co je zač. Jestliže ji umíš sám vyrobit, přesně poznáš, o jaký jed či lektvar se jedná. V opačném případě aspoň určíš, zda je či není nebezpečná. Jedy, kyseliny a podobné tekutiny totiž zbarví papírek do zelena.",
+            "Lakmusový papírek lze stejným způsobem použít i na vzorek krve. Z něj pak lze zjistit, zda je postava otrávená či nikoliv a případně jakým jedem."
+        ],
+        "variants": []
+    },
+    {
+        "id": 4,
+        "name": "LEKTVAR MEDVĚDÍ SÍLY",
+        "latin-name": "Potio Vi Ursum",
+        "mana": 30,
+        "resources": 35,
+        "base": ["zvířecí krev šelmy"],
+        "duration": "půl hodiny (2 směny)",
+        "crafting-time": "10 minut",
+        "short-description": "hnědá barva / odporně slaná chuť / silný zápach",
+        "usage": "pozření",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Po požití této husté tekutiny se začne postava potit, její svaly se napumpují a začne rychle dýchat. Po dobu trvání efektu lektvaru se jí pak zvýší Oprava Síly (SIL) o 3 body.",
+            "Jakmile však efekt lektvaru vyprchá, bude se cítit velmi vyčerpaná. Získá tak pět Bodů únavy či půl Stupně únavy dle vámi hrané varianty."
+        ],
+        "variants": []
+    },
+    {
+        "id": 5,
+        "name": "LEKTVAR MUCHOLAPKA",
+        "latin-name": "Potio Capturum",
+        "mana": 15,
+        "resources": 10,
+        "base": ["pivo", "pryskyřice"],
+        "duration": "15 minut (1 směna)",
+        "crafting-time": "5 minut",
+        "short-description": "zlatavá barva / sladká chuť / vůně medu a borovice",
+        "usage": "pozření",
+        "difficulty": 8,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Minutu po požití tohoto lektvaru se změní sliny toho, kdo jej vypil, na zvláštní pěnu. Dochází k tomu mimo ústa, na vzduchu. Tato pěna dokáže silně přilnout k jakémukoliv předmětu. Sliny si lze plivnout do dlaní či na chodidla a lézt tak po zdech či po stropě podobně jako moucha. Odtrhávat se od přilepených ploch je možné speciálními pohyby, otláčením a kroucením prstů. Nění až tak složité tuto techniku zvládnout. Napoprvé to však může být problém, který zabere někjaký čas.",
+            "Rychlost pohybu je dána třídou velikosti postavy. Postavy velikosti A zvládnou překonat 2 sáhy za kolo, velikosti B 4 sáhy za kolo a velikosti C dokonce 6 sáhů za kolo."
+        ],
+        "variants": []
+    },
+    {
+        "id": 6,
+        "name": "LEKTVAR NEUTRALIZACE",
+        "latin-name": "Potio Neutralis",
+        "mana": 5,
+        "resources": 10,
+        "base": ["3 dcl lihu"],
+        "duration": "ihned",
+        "crafting-time": "5 kol",
+        "short-description": "jasně oranžová, slabě bublající tekutina / bez chuti a zápachu",
+        "usage": "pozření",
+        "difficulty": 8,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Lektvar Neutralizace dokáže během jednoho kola zrušit efekty všech dalších lektvarů, které na postavu právě aktivně působí.",
+            "Neúčinkuje na lektvary, které měly jednorázový efekt a jejichž účinky se už projevily (vyléčení či omlazení postavy a podobně). Stejně tak tento lektvar neúčinkuje na žádné jedy.",
+            "Vypití Lektvaru Neutralizace navíc odstraňuje omezení četnosti rušeného lektvaru. Můžeš ho proto použít znovu bez obav z účinků předávkování."
+        ],
+        "variants": []
+    },
+    {
+        "id": 7,
+        "name": "LEKTVAR RYCHLOSTI",
+        "latin-name": "Potio Velocitas",
+        "mana": 12,
+        "resources": 20,
+        "base": ["voda", "ještěřčí ocásky"],
+        "duration": "1 minuta (10 kol)",
+        "crafting-time": "2 minuty",
+        "short-description": "bleděmodrá tekutina / nasládlá chuť / vůně máty",
+        "usage": "pozření",
+        "difficulty": 8,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Vypitím tohoto lektvaru se postava stane extrémně pohyblivou. Její rychlost se zdvojnásobí a získá tak každé kolo jeden útok (a tím i obranu) navíc. Zároveň získá bonus +2 k hodům na obranu, nikoliv však k akcím vyžadujícím Obratnost. V případě, že postava používá výrazně pomalou zbraň (např. těžkou kuši), bude s ní moci útočit každé kolo.",
+            "Lektvar už ze své podstaty nedokáže zkrátit dobu potřebnou k sesílání kouzel, vyzývání proseb a podobně."
+        ],
+        "variants": []
+    },
+    {
+        "id": 8,
+        "name": "LEKTVAR RANHOJIČ",
+        "latin-name": "Potio Curatio",
+        "mana": 5,
+        "resources": 15,
+        "base": ["víno"],
+        "duration": "ihned",
+        "crafting-time": "5 minut",
+        "short-description": "rudá tekutina / chuť i vůne po skořici, hřebíčku a víně",
+        "usage": "pozření",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Použitím tohoto lektvaru se postavě vyléčí 1k6+2 životů. Zároveň je možné jím zastavit ztrátu životů při kritickém zranění. V takovém případě se vyleje na ránu a ta se během kola zacelí. Při tomto použití už však k obnově počtu životů nedochází."
+        ],
+        "variants": []
+    },
+    {
+        "id": 9,
+        "name": "LEKTVAR ZMĚNY VELIKOSTI",
+        "latin-name": "Potio Mutatio Magnitas",
+        "mana": 25,
+        "resources": 30,
+        "base": ["koňská nebo oslí moč"],
+        "duration": "půl hodiny (2 směny)",
+        "crafting-time": "10 minut",
+        "short-description": "oranžová barva / octová kyselá chuť / pach moči",
+        "usage": "pozření",
+        "difficulty": 8,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Lektvar Změny velikosti existuje ve dvou podobách. Pokud je k jeho výrobě použita oslí moč, jedná se o lektvar zmenšování. Pokud koňská, jde o lektvar zvětšování.",
+            "Po jeho vypití dochází ke zvětšení či zmenšení postavy o jednu tříu velikosti.",
+            "Na velikost předmětů, které má postava u sebe, nemá tento lektvar žádný vliv."
+        ],
+        "variants": []
+    },
+    {
+        "id": 10,
+        "name": "UNIVERZÁLNÍ PROTIJED",
+        "latin-name": "Potio Antidotum",
+        "mana": 5,
+        "resources": 10,
+        "base": ["voda", "uhlí"],
+        "duration": "ihned",
+        "crafting-time": "1 minuta (10 kol)",
+        "short-description": "tmavě šedá tekutina / hořká chuť / bez zápachu",
+        "usage": "pozření",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Tento lektvar dokáže neutralizovat jedy s nebezpečností menší než 7. Silnější jedy pak oslabí na polovinu jejich účinku po celou dobu jejich trvání."
+        ],
+        "variants": []
+    },
+    {
+        "id": 11,
+        "name": "ZÁPALNÁ ŠŃŪRA",
+        "mana": 0,
+        "resources": 5,
+        "base": ["lano", "šňůra", "liána (alespoň 60 coulů)"],
+        "duration": "1 kolo za 10 coulů",
+        "crafting-time": "5 minut",
+        "short-description": "hořlavé vlákno",
+        "usage": "zapálení",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Zápalná šňůra je obvykle cca 60 coulů dlouhý kus provazu. Alchymista do něj vpraví speciální suroviny, které mu zajišťují stabilní hoření (vítr ho neuhasí) a drobné jiskření. Rychlost hoření šňůry je zhruba 10 coulů za kolo. Šňůra se využívá především k odpalu výbušnin všeho druhu."
+        ],
+        "variants": []
+    },
+    {
+        "id": 12,
+        "name": "ZŘEDĚNÝ LÍH",
+        "latin-name": "Spiritus Dilutus",
+        "mana": 0,
+        "resources": 10,
+        "base": ["jakýkoliv alkohol"],
+        "duration": "půl hodiny (2 směny)",
+        "crafting-time": "ihned",
+        "short-description": "čirá tekutina",
+        "usage": "-",
+        "difficulty": 6,
+        "requirements": "Základní",
+        "detailed-description": [
+            "Zředěný líh se používá k čištění alchymistického vybavení. Stejně tak dokáže dezinfikovat rány a zabránit vzniku infekce. Jeden flakón obvykle obsahuje dostatek lihu k provedení deseti takových akcí.",
+            "Tato látka je vysoce hořlavá (stejně jako olej). Lze ji proto použít jak jako zápalnou láhev, tak jako zdroj pro výrobu 'hraček' pyromantů."
+        ],
+        "variants": []
+    },
+    {
+        "id": 13,
+        "name": "Boty Vodoměrky", 
+        "latin-name": "Aquam Calceamenta",
+        "mana": 85, 
+        "resources": 200, 
+        "base": ["boty", "10 vodoměrek"],
+        "duration": "", 
+        "crafting-time": "48 hodin",
+        "short-description": "boty s upravenou podrážkou",
+        "usage": "chůze po hladině",
+        "difficulty": 10, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Nositel těchto bot dokáže chodit po vodě, sněhu, blátě, tekutém písku a podobně.",
+            "Pravdou však je, že taková chůze bývá poměrně obtížná. Boty totiž způsobují dojem vlnění a houpání terénu pod postavou. Rychlost jeho pohybu je tak o polovinu nižší, než je obvyklé."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 14,
+        "name": "Čarovný Štít", 
+        "latin-name": "Magicae Scutum",
+        "mana": 80, 
+        "resources": 45, 
+        "base": ["štít"],
+        "duration": "", 
+        "crafting-time": "48 hodin",
+        "short-description": "jakýkoliv štít potřený speciální ochrannou vrstvou",
+        "usage": "nošení",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Alchymista dokáže vyrobit speciální nátěr, kterým upraví povrch štítu. Ten pak lépe snáší nárazy, tlumí sílu úderů a obecně zlepšuje schopnost krýt se. Díky tomu je kvalita štítu o +1 vyšší, než je u daného štítu jinak obvyklé. V ostatních parametrech je tento štít stejný jako jeho původní verze."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 15,
+        "name": "Chodecký Plášť", 
+        "latin-name": "Ambulans Tunica",
+        "mana": 40, 
+        "resources": 50, 
+        "base": ["plášť"],
+        "duration": "", 
+        "crafting-time": "24 hodin",
+        "short-description": "běžně vypadající plášť s kapucí",
+        "usage": "nošení",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Tento plášť je speciálně upravený olejem a tukem tak, aby se stal odolným vůči vodě. Díky tomu je dokonale nepromokavý. Je tak ideální na cesty ve špatném počasí. Mana v něm navíc způsobuje, že v zimě příjemně hřeje a v létě je vzdušný a mírně chladí. Jak už název napovídá, patří k téměř povinné výbavě chodců, ale nejen jich."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 16,
+        "name": "Jed Dorfův Spánek", 
+        "latin-name": "Veneum Nox Dorfum",
+        "mana": 30, 
+        "resources": 30, 
+        "base": ["voda", "makovice"],
+        "duration": "4 hodiny", 
+        "crafting-time": "20 minut",
+        "short-description": "černá tekutina / slabá vůně a chuť po máku",
+        "usage": "požití",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Tento jed otupuje mysl oběti. Pokud jej někdo požije, hází si na Odolnost proti jeho nebezpečnosti. Jestliže ji svým hodem nepřekoná, ztrácí automaticky iniciativu a má Nevýhodu (postih -5) ke všem akcím.",
+            "Pokud není postava ve stresové situaci (např. boj, pocit nebezpečí), upadne patnáct minut po jeho požití do hlubokého spánku.",
+            "Nebezpečnost lektvaru lze zesílit o +1 za každých 5 bodů many, které do něj přidáš."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 17,
+        "name": "Jed Vosí Žihadlo", 
+        "latin-name": "Veneum Vespa Punctum",
+        "mana": 0, 
+        "resources": 40, 
+        "base": ["voda", "jedovaté byliny"],
+        "duration": "do prvního zásahu", 
+        "crafting-time": "20 minut",
+        "short-description": "černá tekutina / slabá vůně a hořká chuť",
+        "usage": "zranění / požití",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Tento jed lze použít buďto k nanesení na zbraň, nebo k přímému požití. Jedna dávka stačí k potření hrotu 10 šípů či jedné čepele.",
+            "Pokud je cíl takovým šípem zraněn a neuspěje v hodu proti pasti, bude otráven. Ztratí tak jednorázově dva životy. Pokud by byl zraněn otrávenou čepelí a neuspěl v hodu proti pasti, ztratí jednorázově deset životů.",
+            "Životnost jedu na zbrani trvá do prvního zásahu. Poté se ostří setře a další rány už otrávit nedokáže.",
+            "Pokud dojde k požití jedu, postava si hází proti pasti. Jestliže neuspěje, je otrávena za pět životů. Toto ověření se pak opakuje každou směnu, přičemž nebezpečnost se pokaždé snižuje o 1 bod. Jakmile tělo sílu jedu jednou překoná, považuje se za neutralizovaný a žádné další zranění už nepůsobí."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 18,
+        "name": "Kouzelný Luk", 
+        "latin-name": "Arcus Magicae",
+        "mana": 40, 
+        "resources": 100, 
+        "base": ["luk", "koňské žíně", "olej"],
+        "duration": "", 
+        "crafting-time": "48 hodin",
+        "short-description": "luk napuštěný magickým olejem a vybavený zvláštní tětivou",
+        "usage": "nošení (používání v boji)",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Základem této zbraně je magický olej vetřený do tětivy a napuštěný do těla luku. Takto upravená zbraň je pak nebezpečnější než její nemagická verze. Snadněji se s ní střílí, působí větší zranění a umožňuje zasáhnout vzdálenější cíl.",
+            "Útočnost i zranění jsou u kouzelného luku o +1 vyšší než u původní zbraně. Pokud šlo o krátký luk, bude mít nové atributy 5/+1/+0, lovecký luk 6/+3/+0 a dlouhý luk 8/+4/+0. Všechny mají navíc o 30 sáhů delší dostřel než jejich nemagické varianty. V ostatních parametrech je tento luk stejný jako všechny ostatní."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 19,
+        "name": "Krvavé ostří", 
+        "latin-name": "Sanguinum Pugionem", 
+        "mana": 30, 
+        "resources": 30, 
+        "base": ["dýka"],
+        "duration": "", 
+        "crafting-time": "3 hodiny",
+        "short-description": "věčně ostrá dýka",
+        "usage": "nošení (používání v boji)",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Tato dýka je děsivým nástrojem v boji. Snadno totiž překoná i vycpávanou zbroj. Díky magii se navíc udržuje stále ostrá. Její drobné zoubky pak způsobují větší zranění, než je u dýky obvyklé (viz její atributy).",
+            "Útočnost i Zranění jsou u Krvavého ostří o +1 vyšší než u původní zbraně. Obvykle tedy 3/+1/+1. Její váha i délka pak zůstává stejná."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 20,
+        "name": "Lektvar Améba", 
+        "latin-name": "Potio Amoebis", 
+        "mana": 30, 
+        "resources": 20, 
+        "base": ["vaječný bílek", "mléko"],
+        "duration": "půl hodiny (2 směny)", 
+        "crafting-time": "10 minut",
+        "short-description": "průsvitná vazká tekutina / bez chuti a zápachu",
+        "usage": "pozření",
+        "difficulty": 12, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Po pozření tohoto lektvaru se postava promění v lesklou průhlednou hmotu podobnou slizu. Při proměně zůstanou všechny předměty, které měla postava u sebe, na místě. Tělo ztratí svou pevnost a získá nové rosolovité skupenství. To je homogenní, neředí se tekutinami a ani je nepropouští. Hmota samotná je poměrně lehká (zhruba 10 uncí na kilogram původní váhy). Rosol je přilnavý, takže se postava dokáže pohybovat i plazením po zdech nebo stropě.",
+            "Množství rosolu odpovídá původnímu objemu postavy. Je jen na ní, zda se pokusí udržet formu, anebo se rozprostře v malé vrstvě na velké ploše. V tomto skupenství lze také protékat pod dveřmi nebo prolézt klíčovou dírkou.",
+            "Rychlost pohybu se mění podle formy. Pokud je rosol více pohromadě, dokáže se pohybovat zhruba rychlostí chůze. Pokud je rozprostřený, pak se pohybuje pomalu (asi 1 sáh za kolo). Rosol není schopen rozdělit se na více částí. Pokud k tomu dojde působením vnějšího vlivu, má tendenci se opět spojit. Jestliže to nestihne, než skončí efekt působení lektvaru, může dojít ke ztrátě končetin nebo smrti postavy.",
+            "Rosol je schopen unést nebo potlačit předměty o váze několika uncí (klíč, pergamen a podobně). Není však schopen vyvinout větší sílu (např. otočení klíčem v zámku anebo zatažení za kliku). V této formě samozřejmě není možné mluvit ani vydávat jiné zvuky.",
+            "Obyčejné zbraně způsobují postavě v této podobě pouze čtvrtinové zranění. Kouzelné zbraně zraňují plně, stejně jako kouzla. Oheň způsobuje dvojnásobné zranění."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 21,
+        "name": "Lektvar Mrazužár", 
+        "latin-name": "Potio Friguscalor", 
+        "mana": 35, 
+        "resources": 60, 
+        "base": ["líh", "olej", "květ divizny", "květ heřmánku"],
+        "duration": "15 minut (1 směna)", 
+        "crafting-time": "5 minut",
+        "short-description": "čirá tekutina / hořká chuť / slabá vůně citronu",
+        "usage": "pozření",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Po pozření tohoto lektvaru je postava chráněna proti žáru nebo chladu (podle toho, jaký základ byl použit k jeho výrobě). Není tak dočasně zranitelná běžným ohněm či mrazem. Neublíží jí ani žár pochodně, ani pád do ledové řeky.",
+            "Ohnivá a ledová kouzla či dračí dech způsobují postavě pouze poloviční zranění. Extrémní případy, jako je třeba pohyb v lávě, však bývají smrtelné bez ohledu na lektvar (chůze v roztavené hmotě je totiž extrémně náročná, bolestivá a mnohdy trvá tak dlouho, že efekt lektvaru mezitím pomine)."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 22,
+        "name": "Lektvar Životabudič", 
+        "latin-name": "Potio Almus", 
+        "mana": 40, 
+        "resources": 15, 
+        "base": ["rum", "býčí žlázy"],
+        "duration": "2 hodiny", 
+        "crafting-time": "5 minut",
+        "short-description": "černá tekutina / slabá bylinná vůně / velmi sladká chuť po karamelu",
+        "usage": "požití",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Po požití tohoto lektvaru přestane postava zcela (na dvě hodiny) cítit únavu. Jakmile účinek lektvaru odezní, bude naopak dvakrát vyčerpanější, než byla předtím. Spánek nutný k obnově životů či meditaci pak musí trvat o polovinu déle, než je obvyklé."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 23,
+        "name": "Prsten Varování", 
+        "latin-name": "Annulus Admonitio", 
+        "mana": 40, 
+        "resources": 35, 
+        "base": ["prsten", "sklíčko", "fetiš"],
+        "duration": "-", 
+        "crafting-time": "24 hodin",
+        "short-description": "prsten se skleněným okem",
+        "usage": "nošení (září v přítomnosti cíle)",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "K výrobě tohoto prstenu je potřeba fetiš – předmět, který patří někomu, před kým tě má varovat. Alchymista dokáže výrobek upravit tak, aby se vázal na jednotlivce nebo na celou skupinu. Stačí pak vlas nebo kapka krve, abys byl upozorněn na blízkost dané bytosti, případně obecnější věc jako skřetí zub nebo prst nemrtvého, abys byl varován před jakýmkoliv monstrem daného druhu.",
+            "Prsten se aktivuje sám, pokud je daný tvor blíže než sto sáhů. Začne se zahřívat, slabě chvět a jasně světélkovat. Nositel si toho obvykle všimne, ale někdy neuškodí prsten přeci jen zkontrolovat. Čím blíže tvor je, tím více prsten reaguje. S trochou cviku lze takto i stopovat."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 24,
+        "name": "Sliz", 
+        "latin-name": "Lentum Lutum", 
+        "mana": 5, 
+        "resources": 10, 
+        "base": ["pryskyřice"],
+        "duration": "-", 
+        "crafting-time": "2 minuty",
+        "short-description": "slizká hmota zlatavé barvy",
+        "usage": "potření",
+        "difficulty": 8, 
+        "requirements": "Pokročilý", 
+        "detailed-description": [
+            "Jak už název napovídá, lze tímto 'slizem' spojit prakticky cokoliv. Stačí, že je na dobu pěti kol vystaven vzduchu a promění se v extrémně odolnou hmotu. Ta zvládne bez problému udržet i tah koně. Stejně tak dokáže spojit zlomenou zbraň, rozbitou láhev a podobně. Gel ztrácí svou schopnost v mrazu nebo působením naprosto čistého lihu.",
+            "K odpojení slepených předmětů je nutné vynaložit obrovskou sílu. Když se o to někdo pokusí, musí uspět v Ověření SIL vs. 20. Pokud by dvě postavy tahaly slepené předměty od sebe, provede hod jen jedna z nich, ale může k němu přičíst i SIL druhé postavy a také Výhodu (bonus +5)."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 25,
+        "name": "Amulet Many", 
+        "latin-name": "Amuletum Mana", 
+        "mana": 140, 
+        "resources": 148, 
+        "base": ["přívěsek", "ametyst"],
+        "duration": "-", 
+        "crafting-time": "48 hodin / doma",
+        "short-description": "amulet s modrým ametystem",
+        "usage": "nošení",
+        "difficulty": 12, 
+        "requirements": "Krystaly a energie", 
+        "detailed-description": [
+            "Tento amulet je vyhledávaným zbožím všech kouzelníků a čarodějů. Krystal má v sobě tolik many, kterou dokáže kouzelník načerpat a použít. Každý (dodatečný) bod many z amuletu může nahradit 1 bod many kouzelnické. Rychlost čerpání many je 1 bod za kolo a vyžaduje, aby se na něj kouzelník soustředil."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 26,
+        "name": "Caldorova Maska", 
+        "latin-name": "", 
+        "mana": 90, 
+        "resources": 60, 
+        "base": ["libovolná maska"],
+        "duration": "15 minut (1 směna)", 
+        "crafting-time": "48 hodin v dílně",
+        "short-description": "běžně vypadající, většinou papírová nebo dřevěná maska",
+        "usage": "nošení / 2 body přidané many",
+        "difficulty": 14, 
+        "requirements": "Magické předměty", 
+        "detailed-description": [
+            "Caldor byl alchymista, který měl spousty známých a bohužel ještě více dluhů. Většinu času tak trávil na útěku před svými věřiteli. Ti ho však čas od času přece jen dostihli a pak to vždy byla krutá a bolestivá zkušenost. Po jedné takové se rozhodl navždy změnit svou identitu a natrvalo zmizet. To se mu nakonec povedlo díky zvláštní masce, kterou si vyrobil. Postup její výroby se nezachoval, avšak vznikl jiný, nesoucí rovněž jeho jméno. Oproti originálu však funguje jen po omezenou dobu.",
+            "Použitím masky může její nositel změnit vzhled svého obličeje. Stačí si pouze vzpomenout na někoho, koho už dotyčný viděl, a během kola dojde k proměně. Maska samotná zakrývá i temeno hlavy, takže její efekt postihuje i vlasy.", 
+            "Každé použití masky z ní odečerpá dva body přidané many. Ty zajistí proměnu na dobu jedné směny. Za další dva body many lze proměnu o směnu prodloužit. Předmět funguje, dokud v něm je nějaká přídavná mana. Po jejím vyčerpání svou zvláštní schopnost ztrácí."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 26,
+        "name": "Čelenka Porozumění", 
+        "latin-name": "Tiaram Intellectus", 
+        "mana": 50, 
+        "resources": 100, 
+        "base": ["čelenka"],
+        "duration": "1 den", 
+        "crafting-time": "1 den",
+        "short-description": "stříbrný diadém",
+        "usage": "nošení",
+        "difficulty": 10, 
+        "requirements": "Hvězdné sestavy", 
+        "detailed-description": [
+            "Jedná se o tenkou stříbrnou čelenku, která propůjčuje svému nositeli schopnost porozumět cizí řeči a písmu.",
+            "Za řeč se považuje případný inteligentní projev bytosti (INT 2 a výše). Nositel čelenky s tímto jazykem či písmem komunikovat nedokáže."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 28,
+        "name": "Černé Světlo", 
+        "latin-name": "Nigra Lux", 
+        "mana": 15, 
+        "resources": 20, 
+        "base": ["fosfor", "skleněná koule"],
+        "duration": "ihned", 
+        "crafting-time": "2 hodiny",
+        "short-description": "skleněná koule částečně naplněná prachem",
+        "usage": "vrhání",
+        "difficulty": 10, 
+        "requirements": "Nestabilní substance", 
+        "detailed-description": [
+            "Tento předmět je postrachem nemrtvých a neviděných. Ne nadarmo se mu říká 'kladivo na upíry'.",
+            "Zvláštní ingredience jsou vloženy do průhledné skleněné koule opatřené zátkou. Po jejím odstranění trvá tři kola, než se fosfor sám vznítí a spustí potřebnou reakci. Ta se projeví oslepujícím zábleskem (odtud také název předmětu).",
+            "Světlo popálí každého nemrtvého a neviděného tvora v okruhu o poloměru patnáct sáhů od tohoto předmětu. Rozsah zranění, které jím způsobí, je 3k10 životů."
+        ], 
+        "variants": []
+    },
+    {
+        "id": 29,
+        "name": "Čočky nočního vidění",
+        "latin-name": "Noctis Visio Lentium",
+        "mana": 65,
+        "resources": 30,
+        "base": ["oči nočního tvora"],
+        "duration": "-",
+        "crafting-time": "3 hodiny",
+        "short-description": "čočky, které lze vložit do očí",
+        "usage": "nošení",
+        "difficulty": 10,
+        "requirements": "Alchymistická anatomie",
+        "detailed-description": [
+            "Tyto čočky umožňují svému nositeli vidět ve tmě. Ten, kdo je nosí, s nimi ale nedokáže rozeznat barvy. Vše je vidět jen v odstínech šedi (bez ohledu na to, zda je den či noc). V naprosté tmě lze dobře rozeznat překážky a obrysy předmětů. Pokud je v místě aspoň matné světlo, vidíš skrze ně jako ve dne.",
+            "Oči snesou působení čoček zhruba šest hodin. Pak je potřeba je vrátit do nádobky s roztokem many a nechat oči odpočinout. Během hodiny je možné je aplikovat znovu.",
+            "Poznámka: Roztok many se vyrábí 5 minut, vydrží týden a k jeho výrobě spotřebuješ 5 bodů many."
+        ],
+        "variants": []
+    },
+    {
+        "id": 30,
+        "name": "Elixír Metamorfózy",
+        "latin-name": "Magnapotio Permutatio",
+        "mana": 70,
+        "resources": 12,
+        "base": ["0,11 lihu", "vzorek cíle"],
+        "duration": "6 hodin",
+        "crafting-time": "2 minuty",
+        "short-description": "fialovo-žlutá hustá tekutina (emulze)/ vůně i chuť po ostružinách",
+        "usage": "požití",
+        "difficulty": 12,
+        "requirements": "Lektvary a elixíry",
+        "detailed-description": [
+            "Tento elixír umožňuje proměnu na jiného tvora, jehož vzorek byl při výrobě receptu použit. Tvor, na kterého se má uživatel proměnit, musí být zhruba stejně velký jako on (maximálně o jednu třídu velikosti vyšší či nižší).",
+            "Proměnou dotyčný získá všechny fyzické proporce a atributy cíle (včetně hlasu), stejně jako odpovídající počet životů. Zároveň získá i zvláštní schopnosti daného tvora (dýchání pod vodou, noční vidění, schopnost létat a podobně), které však nejsou magické, mýtické či nadpřirozené povahy (schopnost plivat oheň, způsobit zkamenění a podobně).",
+            "Proměna nemá žádný vliv na mysl uživatele ani na jeho znalosti (nezíská tak žádné dovednosti či profesní schopnosti daného cíle). Stejně tak nelze získat schopnost sesílat kouzla a podobně.",
+            "Elixír mění jen tělo uživatele. Na předměty, které má dotyčný u sebe, nemá žádný vliv (tj. pokud se promění na vojáka královské gardy, získáš jeho tělo, avšak ne jeho zbraň, zbroj a podobně).",
+            "Jestliže postava zemře, elixír přestane v jejím těle proudit a to se zvolna (během jedné směny) promění do své původní podoby."
+        ],
+        "variants": []
+    },
+    {
+        "id": 31,
+        "name": "ELIXÍR PROTI LYKANTROPII", 
+        "latin-name": "Magnapotio Anti-lycanthropus",
+        "mana": 40, 
+        "resources": 35, 
+        "base": ["0,11 lihu", "vlčí mor"],
+        "duration": "ihned nebo 24 hodin (viz popis)", 
+        "crafting-time": "30 minut",
+        "short-description": "hnědá průhledná barva / bez zápachu / sladkokyselá chuť",
+        "usage": "požití",
+        "difficulty": 14, 
+        "requirements": "Lektvary a elixíry", 
+        "detailed-description": [
+            "Tento elixír dokáže vyléčit lykantropii (nákazu způsobenou vlkodlačím kousnutím). Je však potřeba, aby byl podán ještě před příchodem prvního úplňku. V takovém případě se postava zcela uzdraví.",
+            "Jestliže však postava nevypila elixír včas, dokáže už jen tlumit následky nákazy. Po dobu 24 hodin zvládne potlačovat projevy nemoci a tím zabránit proměně postavy ve vlka."
+        ],
+        "variants": []
+    },
+    {
+        "id": 32,
+        "name": "ELIXÍR SEDMIBYLÍ", 
+        "latin-name": "Magnapotio Septa-herbae",
+        "mana": 18, 
+        "resources": 22, 
+        "base": ["0,11 lihu", "byliny"],
+        "duration": "ihned", 
+        "crafting-time": "20 minut",
+        "short-description": "zlatavá barva / vůně a chuť sušených bylin",
+        "usage": "požití",
+        "difficulty": 10, 
+        "requirements": "Lektvary a elixíry", 
+        "detailed-description": [
+            "Tento elixír dokáže účinně léčit zranění a tlumit bolest. Mimo jiné umí zastavit otravu krve. Po požití elixíru se postavě vyléčí 3k6 + 6 životů."
+        ],
+        "variants": []
+    },
+    {
+        "id": 33,
+        "name": "ELIXÍR ZAPOMNĚNÍ", 
+        "latin-name": "Magnapotio Amnesia",
+        "mana": 35, 
+        "resources": 10, 
+        "base": ["0,11 lihu", "makovice"],
+        "duration": "15 minut (1 směna)", 
+        "crafting-time": "5 kol",
+        "short-description": "světle šedá, lehce hořká tekutina",
+        "usage": "požití",
+        "difficulty": 8, 
+        "requirements": "Lektvary a elixíry", 
+        "detailed-description": [
+            "Tento elixír se obvykle míchá do piva či jiného alkoholu. Lze tím totiž zakrýt jeho specifickou chuť.",
+            "Jakmile je jednou požřen, způsobuje okamžitě podivnou otupělost. Ten, kdo ho vypije, pak po dobu jedné směny nevnímá okolí a vypadá zadumaně a nekomunikuje.",
+            "Po skončení účinku elixíru si navíc dotyčný nepamatuje nic z toho, co se během předchozí směny stalo."
+        ],
+        "variants": []
+    },
+    {
+        "id": 34,
+        "name": "GAISTOVA LAMPA", 
+        "latin-name": "",
+        "mana": 60, 
+        "resources": 60, 
+        "base": ["broušená čočka", "lucerna"],
+        "duration": "1 kolo", 
+        "crafting-time": "2 hodiny",
+        "short-description": "stíněná lucerna s čočkou na jedné straně",
+        "usage": "svícení / 1 kolo / 5 bodů přidané many",
+        "difficulty": 10, 
+        "requirements": "Magické předměty", 
+        "detailed-description": [
+            "Gaistova lampa je legendární předmět, který slouží k hledání tajných chodeb. Používá se zásadně ve tmě anebo v šeru (za světla nefunguje). Po zapálení oleje v ní začne vydávat kužel matně zeleného světla, který dosvítí nejvýše na vzdálenost pěti sáhů.",
+            "Toto světlo dokáže procházet dřevem i kamenem, a lze s ním proto odhalit skryté výklenky, tajné vchody či obsah zamčených truhel. Jediné, s čím si nedokáže poradit, je jakákoli vrstva kovu.",
+            "V jednom kole lze lampou prozkoumat povrch o velikosti 2×2 sáhy. Vyčerpá tak zároveň pět bodů ze své (přidané) many. Jakmile tato hodnota klesne na nulu, ztratí lampa své magické schopnosti."
+        ],
+        "variants": []
+    },
+    {
+        "id": 35,
+        "name": "Kovožrout",
+        "latin-name": "Metallum Comedentis",
+        "mana": 45,
+        "resources": 40,
+        "base": ["kyselina"],
+        "duration": "dle popisu níže",
+        "crafting-time": "30 minut (2 směny)",
+        "short-description": "flakón s lehce narůžovělou tekutinou / mírně hořká chuť a oříšková vůně",
+        "usage": "nanesení",
+        "difficulty": 8,
+        "requirements": "Nestabilní substance",
+        "detailed-description": [
+            "Na zátce flakónu s touto substancí bývá obvykle vyobrazen symbol zlomeného meče. Ten už trochu napovídá, co dokáže.",
+            "Za normálních okolností tato látka s okolím nijak nereaguje. Lze si s ní klidně umýt ruce, anebo ji dokonce vypít. Pokud se však dostane do kontaktu s kovem, reaguje okamžitě. Zasažené místo černá a z kovu začne stoupat štiplavý dým. Během jedné minuty je schopna rozleptat kov o tloušťce meče, během pěti minut i mohutná oka řetězu. Jeden flakón této látky lze neutralizovat dvěma litry vody. Pokud k tomu nedojde, kyselina přestane po jedné směně sama účinkovat."
+        ],
+        "variants": []
+    },
+    {
+        "id": 36,
+        "name": "LÉTAJÍCÍ KOŠTĚ", 
+        "latin-name": "",
+        "mana": 315, 
+        "resources": 15, 
+        "base": ["koště"],
+        "duration": "-", 
+        "crafting-time": "24 hodin / slunovrat",
+        "short-description": "běžně vypadající koště, které má schopnost létat",
+        "usage": "létání",
+        "difficulty": 14, 
+        "requirements": "Hvězdné sestavy", 
+        "detailed-description": [
+            "Létající koště má v sobě polapeného démona, který mu propůjčuje jeho schopnosti. Koště dokáže letět rychlostí zhruba šedesát sáhů za kolo a obvykle unese až 130 liber zátěže. Ten, kdo ho ovládá, sedí na jeho zadní části. Myšlenkou pak určuje směr a rychlost letu.",
+            "Pokud je překročena nosnost koštěte, letí pomaleji a níže, leckdy se také nevznese vůbec.",
+            "O těchto detailech rozhoduje PJ dle situace."
+        ],
+        "variants": []
+    },
+    {
+        "id": 37,
+        "name": "Krystal Kvantogen",
+        "latin-name": "",
+        "mana": 40,
+        "resources": 60,
+        "base": ["drahokam"],
+        "duration": "-",
+        "crafting-time": "24 hodin / doma",
+        "short-description": "krystal upevněný v kovovém jehlanu",
+        "usage": "přiložení / tavení",
+        "difficulty": 12,
+        "requirements": "Krystaly a energie",
+        "detailed-description": [
+            "Tento krystal se používá k propalování různých překážek. Jakmile se aktivuje, začne jeho vrchol vyzařovat oslnivé světlo o nezměrné teplotě. To dokáže tavit vše, co mu přijde do cesty. Tavný efekt se odehrává přímo v místě, kde se krystal dotýká materiálu.",
+            "Krystal při použití spotřebuje 3 body many za jedno kolo. Zároveň svým žárem propálí materiál do hloubky jednoho a délky deseti coulů. Místo, na kterém už nepůsobí, během deseti kol zchladne na svou obvyklou teplotu."
+        ],
+        "variants": []
+    },
+    {
+        "id": 38,
+        "name": "MEČ POŽÍRAČ DUŠÍ",
+        "latin-name": "",
+        "mana": 130,
+        "resources": 110,
+        "base": ["meč"],
+        "duration": "dle krmení démona",
+        "crafting-time": "24 hodin / půlnoc / úplněk",
+        "short-description": "meč s čepelí rudé až bronzové barvy",
+        "usage": "nošení (používání v boji)",
+        "difficulty": 12,
+        "requirements": "Hvězdné sestavy",
+        "detailed-description": [
+          "Tento meč v sobě obsahuje lačného démona. Jakmile je jím někdo zraněn, démon se nasytí krví oběti (vysaje jí 2 životy navíc).",
+          "Krmení démona je naprosto nezbytné pro jeho udržení v naší existenci. Pokud není v průběhu každých 24 hodin nasycen, začne hladovět. Po dvou dnech \"půstu\" začne čepel blednout a v průběhu třetího dne s hlasitým kovovým brnknutím praskne. Démon se ze zbraně uvolní a navždy zmizí. Meč se tak stane zcela nepoužitelným. K nasycení démona jsou potřeba dva životy vysáté z krve živého tvora (třeba i slepice, nelze-li jinak)."
+        ],
+        "variants": []
+      },
+      {
+        "id": 39,
+        "name": "NASLOUCHÁTKO",
+        "latin-name": "",
+        "mana": 112,
+        "resources": 60,
+        "base": ["ucho (nejlépe celý sluchovod)", "kovový trychtýřek"],
+        "duration": "-",
+        "crafting-time": "48 hodin",
+        "short-description": "trychtýř k nasazení do ucha",
+        "usage": "nošení",
+        "difficulty": 8,
+        "requirements": "Alchymistická anatomie",
+        "detailed-description": [
+          "Pomocí naslouchátka lze vyslechnout i tichý hovor nebo šepot až na vzdálenost padesát sáhů. Zesiluje navíc i nezřetelnou řeč za překážkou (dveře). Obvykle funguje tak dobře, že není potřeba ověřovat úspěch naslouchání. V opačném případě dává nositeli Výhodu (bonus +5) na Postřeh."
+        ],
+        "variants": []
+      },
+      {
+        "id": 40,
+        "name": "NEKROZOR",
+        "latin-name": "",
+        "mana": 50,
+        "resources": 90,
+        "base": ["broušené čočky ze skla nebo drahokamu", "krystal", "dva tubusy"],
+        "duration": "1 kolo",
+        "crafting-time": "48 hodin",
+        "short-description": "dva tubusy s čočkami uvnitř",
+        "usage": "pozorování / 3 body přídavné many",
+        "difficulty": 10,
+        "requirements": "Magické předměty",
+        "detailed-description": [
+          "Nekrozor je zvláštní \"dalekohled\", sloužící k vyhledávání nemrtvých. Funguje na principu zvýraznění tepelé stopy tvorů. Pokud se díváš na živé bytosti, uvidíš kolem nich červenou auru. Chladná těla mrtvol pak světélkují slabě modrou září.",
+          "V klidovém stavu funguje Nekrozor jako běžný dalekohled s trojnásobným přiblížením. Po aktivaci (stisknutí) krystalu dokáže ukazovat auru tvorů až na vzdálenost 100 sáhů.",
+          "Za každé kolo pozorování se z něj odčerpají tři body many (z volitelného množství, které do něj alchymista při výrobě vložil). Předmět lze magicky využívat jen do té doby, dokud je v něm obsažena nějaká přídavná mana. Po jejím odčerpání své zvláštní schopnosti ztrácí."
+        ],
+        "variants": []
+      },
+      {
+        "id": 41,
+        "name": "PLAMENNÝ MEČ",
+        "latin-name": "",
+        "mana": 130,
+        "resources": 70,
+        "base": ["meč"],
+        "duration": "-",
+        "crafting-time": "24 hodin",
+        "short-description": "meč se zelenými krystalky na čepeli",
+        "usage": "nošení (používání v boji)",
+        "difficulty": 12,
+        "requirements": "Nestabilní substance",
+        "detailed-description": [
+          "Ostří tohoto meče je prosyceno manou, která se váže k miniaturním krystalům vzácné soli. Díky tomu stačí škrtnutí čepele o cokoli drsného a nazelenalý plamen ihned zachvátí celé ostří.",
+          "Plameny měří asi pět coulů a dokáží matně osvětlit prostor do vzdálenosti dvou sáhů. Pokud by byl meč použit tímto způsobem, vydrží svítit zhruba den. Poté se jeho mana vyčerpá a sůl vyhoří. Meč tak přijde o své zvláštní schopnosti.",
+          "Čepel lze snadno uhasit pouhým ponořením do vody nebo omezením přístupu vzduchu (stačí meč přikrýt dekou). Dalším škrtnutím ho lze znovu snadno zapálit.",
+          "Pokud takto zapálený meč někoho poraní, způsobí mu dodatečné zranění za 1–3 životy (1k6 / 2)."
+        ],
+        "variants": []
+      },
+      {
+        "id": 42,
+        "name": "PLÁŠŤ CHAMELEON",
+        "latin-name": "",
+        "mana": 30,
+        "resources": 100,
+        "base": ["plášť s kapucí"],
+        "duration": "1 minuta (10 kol)",
+        "crafting-time": "48 hodin / dílna",
+        "short-description": "běžně vypadající plášť s kapucí",
+        "usage": "sepnutí spony / 2 body přídavné many",
+        "difficulty": 12,
+        "requirements": "Magické předměty",
+        "detailed-description": [
+          "Jak už název napovídá, tento plášť dokáže maskovat svého nositele. V okamžiku, kdy je jeho spona sepnutá, změní svůj vzhled. Začne na sobě zrcadlit to, co je za ním. Pro náhodné pozorovatele se tak stává prakticky neviditelným.",
+          "Jestliže se postava v plášti pohhybuje (chůze nebo běh), může si jí teoreticky někdo všimnout. Světlo kolem pláště se začně podivně lámat. Pokud však stojí n a místě nebo se zvolna pohybuje, je maskování naprosto dokonalé",
+          "Každá započatá minuta použití pláště z něj odčerpá dva body přídavné many. Jakmile se tato mana vyčerpá, předmět své zvláštní schopnosti ztrácí."
+        ],
+        "variants": []
+      },
+      {
+        "id": 43,
+        "name": "PRSTEN BLESKU",
+        "latin-name": "",
+        "mana": 100,
+        "resources": 120,
+        "base": ["prsten", "krystal"],
+        "duration": "ihned",
+        "crafting-time": "48 hodin",
+        "short-description": "prsten s vybroušeným krystalem",
+        "usage": "aktivace prstenu / 5 bodů přídavné many",
+        "difficulty": 10,
+        "requirements": "Krystaly a energie",
+        "detailed-description": [
+          "Tento prsten dokáže proměnit manu obsaženou v krystalu a zformovat ji do silného energetického výboje. Tím lze zasáhnout protivníka až na vzdálenost dvaceti sáhů a zranit ho za 2k6 životů.",
+          "K aktivaci prstenu (a seslání blesku) dojde tehdy, jakmile nositel úmyslně sevře ruku v pěst.",
+          "Každé použití prstenu stojí 5 bodů přídavné many v něm obsažené. Aby se krystal při výboji nepoškodil, můžeš seslat vždy nejvýše jeden blesk v daném kole."
+        ],
+        "variants": []
+      },
+        {
+            "id": 44,
+            "name": "Respirátor",
+            "latin-name": "",
+            "mana": 40,
+            "resources": 185,
+            "base": ["plíce (tvor velikosti A nebo vyšší)", "kožená torna"],
+            "duration": "15 minut (1 směna)",
+            "crafting-time": "24 hodin / doma",
+            "short-description": "kožená torna s trubičkou vedoucí ke kožené masce",
+            "usage": "nošení / dýchání",
+            "difficulty": 8,
+            "requirements": "Alchymistická anatomie",
+            "detailed-description": [
+                "Respirátor je kožená maska, ze které vede úzká hadička do speciálně upravené torny. V té je uschována dostatečná zásoba vzduchu na 1 směnu dýchání tam, kde to jinak není možné (pod vodou, v hlubokém podzemí atd.).",
+                "Respirátor lze během jednoho kola znovu naplnit vzduchem (musí to být ale na místě, které nějaký vzduch obsahuje)."
+            ],
+            "variants": []
+        },
+        {
+            "id": 45,
+            "name": "Sibériovy posilující lektvary",
+            "latin-name": "Potio Siberium",
+            "mana": 0,
+            "resources": 65,
+            "base": ["alkohol", "vnitřní orgány"],
+            "duration": "2 hodiny",
+            "crafting-time": "20 minut za každý stupeň zlepšení atributu",
+            "short-description": "dle typu lektvaru (viz tabulka) / zápach a chuť jsou přebity silným pachem lihu",
+            "usage": "požití",
+            "difficulty": 10,
+            "requirements": "Alchymistická anatomie",
+            "detailed-description": [
+                "Sibérius byl alchymista, který proslul svými experimenty, především znalostmi anatomie a elixírů. Byl to právě on, kdo přišel na to, jak překonat fyzické i mentální hranice lidského těla. To vše se mu podařilo jen a pouze za použití zdravých orgánů jiných tvorů.",
+                "Tímto lektvarem můžeš dočasně zvýšit hodnotu opravy vybraného atributu. V tabulkách níže pak najdeš, jaký základ a kolik many k tomu budeš potřebovat."
+            ],
+            "variants": [
+                {"name": "Síla", "description": "Základ: Srdce, Barva: Rudá"},
+                {"name": "Odolnost", "description": "Základ: Játra, Barva: Hnědá"},
+                {"name": "Obratnost", "description": "Základ: Šlachy, Barva: Růžová"},
+                {"name": "Inteligence", "description": "Základ: Mozek, Barva: Šedá"},
+                {"name": "Charisma", "description": "Základ: Oči, Barva: Bílá"},
+                {"name": "Bonus +1", "description": "Mana: 18"},
+                {"name": "Bonus +2", "description": "Mana: 45"},
+                {"name": "Bonus +3", "description": "Mana: 110"},
+                {"name": "Bonus +4", "description": "Mana: 230"},
+                {"name": "Bonus +5", "description": "Mana: 400"},
+                {"name": "Bonus +6", "description": "Mana: 590"}
+            ]
+        },
+        {
+            "id": 46,
+            "name": "Světloprach",
+            "latin-name": "Eos Pulvis",
+            "mana": 5,
+            "resources": 20,
+            "base": ["drcený drahokam, nejčastěji opál"],
+            "duration": "2 hodiny",
+            "crafting-time": "10 minut",
+            "short-description": "jemný, lehký, zlatý prášek nošený ve váčku značeném bílou stuhou",
+            "usage": "-",
+            "difficulty": 6,
+            "requirements": "Krystaly a energie",
+            "detailed-description": [
+                "Tento zvláštní prášek začne při kontaktu se vzduchem jemně světélkovat (barva světla se může lišit podle druhu kamene, který byl k jeho výrobě použit).",
+                "Prášek se rozzáří, pokud je ponechán na vzduchu déle než pět kol. Jedna čajová lžička (desetina váčku) dokáže vydávat záři o síle pochodně. Ta postupně slábne, až po dvou hodinách ustane docela.",
+                "Prach při svícení nevydává žádné teplo a doprovází ho pouze jemný pach síry. Je velmi lehký a nechává se tak snadno unášet vzduchem."
+            ],
+            "variants": []
+        },
+        {
+            "id": 47,
+            "name": "VAK BEZTÍŽE", 
+            "latin-name": "",
+            "mana": 45, 
+            "resources": 90, 
+            "base": ["pytel", "vak"],
+            "duration": "24 hodin / úplěěk", 
+            "crafting-time": "",
+            "short-description": "běžně vypadající vak na cesty",
+            "usage": "nošení",
+            "difficulty": 14, 
+            "requirements": "Hvězdné sestavy", 
+            "detailed-description": [
+                "Tento vak o průměru 30 × 60 coulů má v sobě zakletého démona. Díky němu nemají předměty v něm žádnou hmotnost. Jejich množství je limitováno pouze velikostí vaku. Předměty v něm musí být uschovány celé a nic nesmí trčet ven. Teprve pak na ně může démon působit.",
+                "Do vaku se nesmí vkládat jiné magické předměty. Pokud by k tomu došlo, jejich mana bude démonem pohlcena. Jestliže by navíc obsahovaly jiného démona, může se stát prakticky cokoliv. Na živé tvory nemá démon žádný vliv."
+            ], 
+            "variants": []
+        },
+        {
+            "id": 48,
+            "name": "VÝBUŠNÁ HLÍNA", 
+            "latin-name": "",
+            "mana": 12, 
+            "resources": 15, 
+            "base": ["hlína"],
+            "duration": "ihned", 
+            "crafting-time": "10 minut",
+            "short-description": "hliněna koule velikosti lidské pěsti",
+            "usage": "vrhání",
+            "difficulty": 10, 
+            "requirements": "Nestabilní substance", 
+            "detailed-description": [
+                "Výbušná hlína otevírá alchymistům dveře dokořán (a to doslova). Dá se totiž snadno vpravit do zámků i spár pod dveřmi. Její explozi lze vyvolat kontaktem s přímým ohněm (obvykle zápalná šňůra) nebo prudkým nárazem (vržením).",
+                "Jakmile dojde k explozi, zraní hlína každého tvora v dosahu (kruh o poloměru tří sáhů) ohněm za 2k6 životů. Zasažený hořlavý materiál má navíc tendenci se vznítit.",
+                "Trvanlivost výbušné hlíny je zhruba jeden měsíc. Poté se stává nestabilní a může samovolně vybuchnout."
+            ], 
+            "variants": []
+        }
+
+]
